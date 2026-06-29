@@ -1,0 +1,26 @@
+{
+    "name": "rithy/zkteco-adms",
+    "description": "Laravel package for ZKTeco ADMS Push SDK integration using the same logic as the original Laravel implementation.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Rithy\\ZktecoAdms\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rithy\\ZktecoAdms\\ZktecoAdmsServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^11.0|^12.0",
+        "illuminate/routing": "^11.0|^12.0",
+        "illuminate/database": "^11.0|^12.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
