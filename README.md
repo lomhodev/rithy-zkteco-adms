@@ -28,7 +28,7 @@ This package is extracted from a real-world production attendance system and pre
 ## RequirementVersion
 
 - PHP8.2+
-  =Laravel11.x +
+- Laravel11.x +
 
 # Installation
 
