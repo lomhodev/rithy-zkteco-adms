@@ -38,6 +38,28 @@ This package is extracted from a real-world production attendance system and pre
 composer require rithy/zkteco-adms
 ```
 
+### If composer require rithy/zkteco-adms is not working
+
+Add the repository manually in your project's `composer.json`:
+
+```json
+{
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/lomhodev/rithy-zkteco-adms"
+    }
+  ]
+}
+```
+
+Then run:
+
+```
+composer clear-cache
+composer require rithy/zkteco-adms:dev-main
+```
+
 ---
 
 ## 2. Publish Configuration
