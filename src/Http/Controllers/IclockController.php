@@ -169,31 +169,6 @@ class IclockController extends \Illuminate\Routing\Controller
             ->header('Content-Type', 'text/plain');
     }
 
-    // public function deviceCmd(Request $request)
-    // {
-    //     $body = trim($request->getContent());
-
-    //     Log::info('ZKTeco devicecmd called', [
-    //         'method' => $request->method(),
-    //         'url' => $request->fullUrl(),
-    //         'query' => $request->query(),
-    //         'body' => $body,
-    //         'all' => $request->all(),
-    //     ]);
-
-    //     parse_str($body, $data);
-
-    //     if (! empty($data['ID'])) {
-    //         ZkCommand::where('id', $data['ID'])->update([
-    //             'status' => ($data['Return'] ?? null) === '0' ? 'success' : 'failed',
-    //             'response' => $body,
-    //             'completed_at' => now(),
-    //         ]);
-    //     }
-
-    //     return response("OK\r\n", 200)->header('Content-Type', 'text/plain');
-    // }
-
     private function storeAttendanceLines(string $body, string $sn, ZkRecordService $zkRecordService): void
     {
         foreach (preg_split('/\r\n|\r|\n/', $body) as $line) {
